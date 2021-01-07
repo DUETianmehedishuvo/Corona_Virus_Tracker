@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_screen_back3"
+    tools:context=".AboutUs">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#01CD98"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="About Developer"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/infoCloseBTN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="5dp"
+                android:src="@drawable/action_close" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/shuvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/infoContentTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_screen_back2"
+                    android:lineHeight="25dp"
+                    android:text="আসসালামু আলাইকুম\nআমি মোঃ মেহেদি হাসান শুভ \nবর্তমান ঢাকা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় এ কম্পিউটার সাইন্স এন্ড ইঞ্জিনিয়ারিং বিভাগের প্রথম বর্ষে অধ্যায়নরত একজন শিক্ষার্থি।\nকরোনা ভাইরাস বর্তমানে মহামারি রূপ ধারন করেছে।আমি ব্যাক্তিগত ভাবে মনে করি আমাদের সবার সচেতন ভাবে চলা উচিৎ ও সবার কথা মাথায় রেখে চলা উচিৎ।এইভাবে যদি চলতে থাকে তবে দুর্ভিক্ষের মত বড় সমস্যার সম্মুখীন হতে পারি আমরা,এইজন্য আমাদের উচিৎ একে অপরের পাশে দ্বারানো ,সরকারের বিঁধি নিষেধ মেনে চলা,নিশ্চিত না হয়ে কোন গুজবে কান না দেওয়া এবং সৃষ্টিকর্তার কাছে নিয়মিত প্রার্থনা করা যেন উনি এই সমস্যার সমাধান করে দেন,কারন জেনেটিক্স ইঞ্জিনিয়াররা এত বড় সাফল্য এখনোও পায়নি যে একই ভাইরাস বিভিন্ন সময় বিভিন্ন রূপ ধারন করবে।আশা করি খুব শিঘ্রই এই সমস্যার সমাধান হবে ইংশা-আল্লাহ।ধন্যবাদ।"
+                    android:padding="5dp"
+                    android:textColor="#180101"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_marginTop="20sp"
+                    android:textColor="#000"
+                    android:background="#D2F7D3"
+                    android:gravity="center"
+                    android:text="ভাল লাগলে জানাতে পারেন আমার ফেসবুক এ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:drawablePadding="20dp"
+                    android:padding="5dp"
+                    android:text="+8801303129515"
+                    android:drawableLeft="@drawable/action_call"
+                    android:autoLink="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:drawablePadding="20dp"
+                    android:padding="5dp"
+                    android:text="https://facebook.com/m.mehedihasanshuvo.in"
+                    android:drawableLeft="@drawable/action_web"
+                    android:autoLink="web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:drawablePadding="20dp"
+                    android:padding="5dp"
+                    android:text="bdmehedishuvo@gmail.com"
+                    android:drawableLeft="@drawable/action_web"
+                    android:autoLink="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

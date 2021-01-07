@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#00796B"
+        android:textSize="15sp"
+        android:text="আপনার পছন্দের দেশ সিলেক্ট করুনঃ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/main_screen_back4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <ListView
+        android:choiceMode="singleChoice"
+        android:listSelector="#666666"
+        android:id="@+id/selectCountryLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

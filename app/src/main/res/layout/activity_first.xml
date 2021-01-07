@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context="com.mehedi.koronaviruscausesTusu.FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/line"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#F5F6FB"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="সর্বশেষ পরিস্থিতি:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/mTcasesTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="#59438D"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:textColor="#7E7E7E"
+                                    android:gravity="center"
+                                    android:text="মোট আক্রান্ত"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/mTDeadsTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="#EE6B6B"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:textColor="#7E7E7E"
+                                    android:gravity="center"
+                                    android:text="মোট মৃত্যু"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/mTrecorvedTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="#52A167"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:textColor="#7E7E7E"
+                                    android:gravity="center"
+                                    android:text="মোট সুস্থ"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mLastUpdateTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="end"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="সর্বশেষ আপডেটঃ 2020 04 April 12:20 Am"
+                            android:textSize="12sp" />
+
+
+                        <View
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#ddd"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:textColor="#512DA8"
+                            android:gravity="center"
+                            android:text="করোনা ভাইরাস নিয়া আতঙ্ক নয়,সচেতনতায় পারে এর বিরুদ্ধে প্রতিরোধ গরে তুলতে।"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5dp"
+                            android:elevation="5dp"
+                            android:padding="5dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_width="250dp"
+                            android:layout_height="145dp">
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:text="আজকের পরিস্থিতি:"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/aCasesTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="#59438D"
+                                            android:textSize="16sp" />
+                                        <TextView
+                                            android:textColor="#7E7E7E"
+                                            android:gravity="center"
+                                            android:text="আক্রান্ত"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/aDeadsTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="#EE6B6B"
+                                            android:textSize="16sp" />
+                                        <TextView
+                                            android:textColor="#7E7E7E"
+                                            android:gravity="center"
+                                            android:text="মৃত্যু"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#ddd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"/>
+
+                                <TextView
+                                    android:textColor="#512DA8"
+                                    android:gravity="center"
+                                    android:text="আসুন নিজে বাঁচি এবং অন্যকে বাচাই।"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5dp"
+                            android:elevation="5dp"
+                            android:padding="5dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_width="320dp"
+                            android:layout_height="145dp">
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:id="@+id/bdLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:text="বাংলাদেশের পরিস্থিতি:"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/bCasesTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="#59438D"
+                                            android:textSize="16sp" />
+                                        <TextView
+                                            android:textColor="#7E7E7E"
+                                            android:gravity="center"
+                                            android:text="আক্রান্ত"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/bDeatsTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="#EE6B6B"
+                                            android:textSize="16sp" />
+                                        <TextView
+                                            android:textColor="#7E7E7E"
+                                            android:gravity="center"
+                                            android:text="মৃত্যু"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/bRecorveredTV"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:textColor="#52A167"
+                                            android:textSize="16sp" />
+                                        <TextView
+                                            android:textColor="#7E7E7E"
+                                            android:gravity="center"
+                                            android:text="সুস্থ"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:textSize="16sp"
+                                        android:textColor="#59438D"
+                                        android:gravity="center"
+                                        android:text="আজকে আক্রান্তঃ"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent"/>
+
+                                    <TextView
+                                        android:id="@+id/bacasesTV"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:textColor="#59438D"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#ddd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"/>
+
+                                <TextView
+                                    android:textColor="#512DA8"
+                                    android:gravity="center"
+                                    android:text="নিজের প্রতি বিশ্বাস হারিয়েন না।।"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="#18222E"
+                    android:text="সকল গাইডলাইন"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="করোনা ভাইরাস (কোভিড-১৯) কি?"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="করোনাভাইরাসের লক্ষণগুলো কী?"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="করোনা ভাইরাস প্রতিরোধে করণীয়"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="করোনা ভাইরাস প্রতিরোধে হাত ধোয়ার নিয়ম"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="কোভিড-১৯ আক্রান্ত সন্দেহভাজন কারা?"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="কোয়ারেন্টাইন ও আইসোলেসন কি?"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="হোম কোয়ারেন্টাইন কি?"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="কোভিড-১৯ নিয়ন্ত্রণে আইনের প্রয়োগ"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/question8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/main_screen_back2"
+                                android:gravity="center"
+                                android:onClick="infoQuestion"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="সহজে জীবানুনাশক বানানোর নিয়ম"
+                                    android:textColor="#1B65A4"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="#18222E"
+                    android:text="(কোভিড-১৯) এর ঝুঁকি রোধে করনীয়:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/corona_image"
+                                android:scaleType="fitXY"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona1"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/coronaone"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"/>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona2"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/korona2" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona3"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/korona3" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona4"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/korona4" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona5"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/korona5" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:padding="5dp"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#F3F9FF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/korona6"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:onClick="imageShow"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/korona6" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="#01CD98"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:onClick="aboutUs"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:text="About Developer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

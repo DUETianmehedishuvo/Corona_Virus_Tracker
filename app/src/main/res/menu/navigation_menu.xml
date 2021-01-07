@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Home" android:id="@+id/action_home" android:checked="true"/>
+        <item android:title="Show All Country" android:id="@+id/action_lastCondition"/>
+        <item android:title="Search Flag" android:id="@+id/action_flag"/>
+        <item android:title="Search Specify Country" android:id="@+id/action_search_specify_country"/>
+        <item android:title="Bangladesh Day By Day Condition" android:id="@+id/action_bangladesh_dayByDayondition"/>
+        <item android:title="Search Day By Day Condition" android:id="@+id/action_dayByDayConditionWorls"/>
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Donate" android:id="@+id/action_donate"/>
+                <item android:title="About Developer" android:id="@+id/action_aboutDeveloper"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

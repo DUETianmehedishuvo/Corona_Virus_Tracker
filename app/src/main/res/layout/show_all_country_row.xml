@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ddd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="17sp"
+                    android:id="@+id/scountryTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_screen_back4"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Country Name"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sTotalCausesTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_screen_back4"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Total Causes"
+                    android:textColor="#424C94"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sTotalDeadsTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_screen_back5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Total Deads"
+                    android:textColor="#E43A05"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/sTotalRecorveredTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_screen_back4"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Total Recovered"
+                    android:textColor="#0D9C13"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sNewCasesTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_screen_back4"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="New Causes"
+                    android:textColor="#424C94"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sNewDeadsTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_screen_back5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="New Deads"
+                    android:textColor="#E43A05"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
